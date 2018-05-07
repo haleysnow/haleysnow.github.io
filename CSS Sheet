@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+html{
+  background-color: light-blue;
+  background-image: url("background.jpg");
+  background-repeat: no-repeat;
+  background-position: fixed;
+  background-size: cover;
+  }
+h1{
+  color: black;
+  font-family: veranda;
+  font-size: 36px;
+  text-align: center;
+  }
+  
+h2{
+  color: black;
+  font-family: veranda;
+  font-size: 26px;
+  text-align: center;
+  }
+  
+h3{
+  color: black;
+  font-family: veranda;
+  font-size: 16px;
+  text-align: center;
+  }

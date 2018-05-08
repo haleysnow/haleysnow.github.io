@@ -72,6 +72,7 @@ function myMove() {
       clearInterval(id);         
     }
     else {
+      var rand = Math.random();
       pos+= rand.nextInt(2);  
       elem.style.left = pos + 'px';  
       pos2+= rand.nextInt(2);;  

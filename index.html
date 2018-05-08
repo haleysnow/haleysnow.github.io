@@ -22,13 +22,6 @@
   background-repeat: no-repeat;
 }
   
-#myAnimationTwo {
-  width: 187px;
-  height: 113px;
-  position: absolute;
-  background: url("girl.png");
-  background-repeat: no-repeat;
-  padding-top: 50%
 }  
  body{
    text-align: center;
@@ -47,9 +40,7 @@
 </p>
 
 <div id ="myContainer">
-  <div id ="myAnimation"></div> 
-<br /><br />
-  <div id ="myAnimationTwo"></div> 
+  <div id ="myAnimation"></div>  
 </div>
   
 <script>
@@ -63,19 +54,7 @@ function myMove() {
       clearInterval(id);
     } else {
       pos++;  
-      elem.style.left = pos + 'px'; 
-    }
-  }
-  var elem = document.getElementById("myAnimationTwo");   
-  var pos = 0;
-  var id = setInterval(frame, 10);
-  function frame() {
-    if (pos == 900) {
-      alert("Astrid and Stormfly WIN!");
-      clearInterval(id);
-    } else {
-      pos++;  
-      elem.style.left = pos + '1.2px';                                      
+      elem.style.left = pos + 'px';                                      
     }
   }
 }                                     

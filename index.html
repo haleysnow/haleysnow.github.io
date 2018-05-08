@@ -2,36 +2,59 @@
 <html>
 <head>
 <title> The Great Race </title>
-  
+</head>   
 <style>
   html{
-   background-color: light-blue;
    background-image: url("background.jpg");
    background-repeat: no-repeat; 
-   background-position: relative; 
+   background-position: fixed; 
    background-size: cover; 
   }
   
-</style>
+  #myContainer {
+   width: 100%;
+   height: auto;
+   position: relative;
+   background: url("background.jpg") no-repeat cover; 
+  }
   
-</head>  
+  #myAnimation{
+   width: 170px;
+   height: 130px;
+   position: absolute;
+   background-image: url("hiccup.png"); 
+  }
+  
+  function myMove() {
+    var elem = document.getElementById("myAnimation");
+    var pos = 2%;
+    var id = setInterval(frame, 5);
+  
+    function frame(#myAnimation) {
+      if (pos == 90%) {
+        alert("Hiccup and Toothless WIN!"); 
+      }
+      else {
+        pos++;
+        elem.style.left = pos + '%';
+      }
+    }
+  }
+</style>
   
 <body>
   <h1>THE GREAT RACE!</h1>
   <h2>Hiccup and Toothless versus Astrid and Stormfly</h2>
   <h3>Click on the viking's helmet to start the race!</h3>
-  <form action= "index.html" method="get">
-    <p>
-      <input type= "image" src="viking-helmet.png" width="70px" height="70px"/>
-    </p>
-  </form>
-  <div id="html">
-    <div id = "myAnimation"></div>
+  <input class="w3-button" type="button" src="viking-helmet.png" width="70px" height="70px"/>
+  
+  <div id="#myContainer">
+    <div id = "#myAnimation">Go!</div>
   </div>
   
   <img src="finish.png" width="300px" height="50px" align="right" />
   <br /><br />
-  <img src="hiccup.png" width="170px" height="130px" />
+  <img src="hiccup.png"/>
   <br /><br />
   <img src="girl.png" width="170px" height="130px" />
 </body>

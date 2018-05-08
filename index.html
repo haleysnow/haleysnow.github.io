@@ -9,7 +9,7 @@
   width: 1000px;
   height: 600px;
   position: relative;
-  repeat: no-repeat;
+  background-repeat: no-repeat;
   background: url("dragon-background.jpg");
   margin-left: auto;
   margin-right: auto;
@@ -19,6 +19,7 @@
   height: 113px;
   position: absolute;
   background: url("hiccup.png");
+  background-repeat: no-repeat;
 }
   
 #myAnimationTwo {
@@ -26,6 +27,8 @@
   height: 113px;
   position: absolute;
   background: url("girl.png");
+  background-repeat: no-repeat;
+  padding-top: 20%
 }  
  body{
    text-align: center;
@@ -72,7 +75,7 @@ function myMove() {
       clearInterval(id);
     } else {
       pos++;  
-      elem.style.left = pos + '2px';                                      
+      elem.style.left = pos + '1.2px';                                      
     }
   }
 }                                     

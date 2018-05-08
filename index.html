@@ -45,9 +45,7 @@
 
 <div id ="myContainer">
   <div id ="myAnimation"></div> 
-</div>
-<br />
-<div id ="myContainer">
+<br /><br />
   <div id ="myAnimationTwo"></div> 
 </div>
   
@@ -58,8 +56,8 @@ function myMove() {
   var id = setInterval(frame, 10);
   function frame() {
     if (pos == 900) {
-      clearInterval(id);
       alert("Hiccup and Toothless WIN!");
+      clearInterval(id);
     } else {
       pos++;  
       elem.style.left = pos + 'px'; 
@@ -70,8 +68,8 @@ function myMove() {
   var id = setInterval(frame, 10);
   function frame() {
     if (pos == 900) {
-      clearInterval(id);
       alert("Astrid and Stormfly WIN!");
+      clearInterval(id);
     } else {
       pos++;  
       elem.style.left = pos + '2px';                                      
@@ -80,5 +78,4 @@ function myMove() {
 }                                     
                                       
 </script>  
-  
 </html>  

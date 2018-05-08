@@ -34,12 +34,19 @@ form {
   padding-left: 47%;
   }
   
-  #myContainer{
+  html{
   background-color: light-blue;
   background-image: url("background.jpg");
   background-repeat: no-repeat;
-  background-position: relative;
+  background-position: fixed;
   background-size: cover;
+  }
+  
+#myContainer{
+  background-image: url("background.jpg");
+  position: relative;
+  height: 100%;
+  width: auto;
   }
   
 #myAnimation{

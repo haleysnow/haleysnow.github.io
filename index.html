@@ -3,22 +3,7 @@
 <head>
 <title> The Great Race </title>
 <style>
-  
-  html{
-  background-color: light-blue;
-  background-image: url("background.jpg");
-  background-repeat: no-repeat;
-  background-position: fixed;
-  background-size: cover;
-  }
-  
-body{
-  padding-top: 10px;
-  padding-right: 2%;
-  padding-left: 2%;
-  }
-  
-h1{
+  h1{
   color: black;
   font-family: veranda;
   font-size: 36px;
@@ -38,19 +23,52 @@ h3{
   font-size: 16px;
   text-align: center;
   }
+  
+  body{
+  padding-top: 10px;
+  padding-right: 2%;
+  padding-left: 2%;
+  }
  
 form {
   padding-left: 47%;
   }
   
-img {
-  padding-left: 20px;
+  #myContainer{
+  background-color: light-blue;
+  background-image: url("background.jpg");
+  background-repeat: no-repeat;
+  background-position: relative;
+  background-size: cover;
+  }
+  
+#myAnimation{
+  background-image: url("hiccup.png);
+  position: absolute;
+    }
+
+function myMove() {
+  var elem = document.getElementByID("myAnimation")
+  var pos = 0;
+  var id = setInterval(frame, 10);
+  function frame() {
+    if (pos == 350) {
+      clearInterval(id);
+    }
+    else {
+      pos++;
+      elem.style.left = pos + 'px';
+    }
+  }
   }
   
 </style>
 </head>  
   
 <body>
+  <div id="myContainer">
+    <div id = "myAnimation"></div>
+  </div>
   <h1>THE GREAT RACE!!!</h1>
   <h2>Hiccup and Toothless versus Astrid and Stormfly</h2>
   <h3>Click on the viking's helmet to start the race!</h3>

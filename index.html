@@ -20,6 +20,13 @@
   position: absolute;
   background: url("hiccup.png");
 }
+  
+#myAnimationTwo {
+  width: 100px;
+  height: 70px;
+  position: absolute;
+  background: url("girl.png");
+}  
  body{
    text-align: center;
    background-color: aliceBlue;
@@ -37,7 +44,8 @@
 </p>
 
 <div id ="myContainer">
-<div id ="myAnimation"></div>
+  <div id ="myAnimation"></div>
+  <div id ="myAnimationTwo></div>  
 </div>
 
 <script>
@@ -54,7 +62,19 @@ function myMove() {
       elem.style.left = pos + 'px'; 
     }
   }
+  var elem = document.getElementById("myAnimationTwo");   
+  var pos = 0;
+  var id = setInterval(frame, 10);
+  function frame() {
+    if (pos == 900) {
+      clearInterval(id);
+      alert("Astrid and Stormfly WIN!");
+    } else {
+      pos++;  
+      elem.style.left = pos + '2px';                                      
+  }
 }
+                                      
 </script>  
   
 </html>  

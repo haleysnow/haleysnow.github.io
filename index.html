@@ -50,7 +50,7 @@
 </style>
   
 <body>
-  <h1>THE GREAT RACE!!</h1>
+  <h1>THE GREAT RACE!</h1>
   <h2>Hiccup and Toothless versus Astrid and Stormfly</h2>
   <h3>Click on the VIKING helmet to start the race!</h3>
 </body>
@@ -84,9 +84,9 @@ function myMove() {
       clearInterval(id);         
     }
     else {
-      pos = pos + getRandomInt(1, 10);
+      pos = pos + getRandomInt(1, 5);
       elem.style.left = pos + 'px';
-      pos2 = pos2 + getRandomInt(1, 10);
+      pos2 = pos2 + getRandomInt(1, 5);
       elem2.style.left = pos2 + 'px';
       console.log("pos: " + pos + "<br>" + "pos2: ");
     }

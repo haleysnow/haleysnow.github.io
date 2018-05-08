@@ -6,11 +6,12 @@
   
 <style>
 #myContainer {
-  width: 1200px;
+  width: 1000px;
   height: 600px;
   position: relative;
   repeat: no-repeat;
   background: url("dragon-background.jpg");
+  align: center;
 }
 #myAnimation {
   width: 100px;
@@ -40,10 +41,10 @@
 <script>
 function myMove() {
   var elem = document.getElementById("myAnimation");   
-  var pos = 0;
+  var pos = 200;
   var id = setInterval(frame, 10);
   function frame() {
-    if (pos == 750) {
+    if (pos == 950) {
       clearInterval(id);
     } else {
       pos++;  

@@ -78,11 +78,11 @@ function myMove() {
   var pos2 = 0;
   var id = setInterval(frame, 10);
   function frame() {
-    if (pos > 1000) {
+    if (pos == 1000) {
       alert("Hiccup and Toothless WIN!");
       clearInterval(id);
     } 
-    else if (pos2 > 1000) {
+    else if (pos2 == 1000) {
       alert("Astrid and Stormfly WIN!");
       clearInterval(id);         
     }

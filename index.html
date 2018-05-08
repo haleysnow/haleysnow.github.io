@@ -39,7 +39,7 @@
   position: absolute;
   background: url("hiccup.png");
   background-repeat: no-repeat;
-  margin-top: 150px;
+  margin-top: 100px;
 }
  
 #myAnimationAgain {
@@ -48,7 +48,7 @@
   position: absolute;
   background: url("girl.png");
   background-repeat: no-repeat;
-  margin-top: 400px;
+  margin-top: 350px;
 }  
  
 </style>
@@ -75,18 +75,18 @@ function myMove() {
   var pos2 = 0;
   var id = setInterval(frame, 10);
   function frame() {
-    if (pos > 1000) {
+    if (pos > 1200) {
       alert("Hiccup and Toothless WIN!");
       clearInterval(id);
     } 
-    else if (pos2 > 1000) {
+    else if (pos2 > 1200) {
       alert("Astrid and Stormfly WIN!");
       clearInterval(id);         
     }
     else {
-      pos = pos + getRandomInt(1, 8);
+      pos = pos + getRandomInt(1, 10);
       elem.style.left = pos + 'px';
-      pos2 = pos2 + getRandomInt(1, 8);
+      pos2 = pos2 + getRandomInt(1, 10);
       elem2.style.left = pos2 + 'px';
       console.log("pos: " + pos + "<br>" + "pos2: ");
     }

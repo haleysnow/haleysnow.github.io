@@ -5,7 +5,11 @@
 </head>   
 <style>
   html{
-   background-color: lightblue; 
+  background-color: light-blue;
+  background-image: url("background.jpg");
+  background-repeat: no-repeat;
+  background-position: relative;
+  background-size: cover;
   }
   
   h1{
@@ -33,13 +37,6 @@
    text-align: center; 
   }
   
-  #myContainer {
-   width: 100%;
-   height: auto;
-   position: relative;
-   background: url("background.jpg") no-repeat cover; 
-  }
-  
   #myAnimation{
    width: 170px;
    height: 130px;
@@ -57,7 +54,7 @@
     <button onclick="myMove()">GO!</button>
   </p>
   
-  <div id="#myContainer">
+  <div id="#html">
     <div id = "#myAnimation"></div>
   </div>
   

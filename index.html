@@ -50,7 +50,7 @@
 </style>
   
 <body>
-  <h1>THE GREAT RACE</h1>
+  <h1>THE GREAT RACE!!!</h1>
   <h2>Hiccup and Toothless versus Astrid and Stormfly</h2>
   <h3>Click on the VIKING helmet to start the race!</h3>
 </body>
@@ -65,6 +65,12 @@
 </div>
   
 <script>
+  
+function getRandomInt(min, max) {
+  min = Math.cell(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min)) + min;
+  
 function myMove() {
   var elem = document.getElementById("myAnimation"); 
   var pos = 0;
@@ -81,9 +87,9 @@ function myMove() {
       clearInterval(id);         
     }
     else {
-      pos = pos + Math.random(5);
+      pos = pos + getRandomInt(1, 5);
       elem.style.left = pos + 'px';
-      pos2 = pos + Math.random(3);
+      pos2 = pos + getRandomInt(1, 5);
       elem2.style.left = pos2 + 'px';
     }
   }

@@ -66,11 +66,6 @@
   
 <script>
   
-function getRandomInt(min, max) {
-  min = Math.cell(min);
-  max = Math.floor(max);
-  return Math.floor(Math.random() * (max - min)) + min;
-  
 function myMove() {
   var elem = document.getElementById("myAnimation"); 
   var pos = 0;
@@ -87,9 +82,9 @@ function myMove() {
       clearInterval(id);         
     }
     else {
-      pos = pos + Math.random(getRandomInt(1, 5));
+      pos = pos + Math.random();
       elem.style.left = pos + 'px';
-      pos2 = pos + Math.random(getRandomInt(1, 5));
+      pos2 = pos + Math.random();
       elem2.style.left = pos2 + 'px';
     }
   }

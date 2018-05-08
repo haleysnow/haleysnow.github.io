@@ -72,9 +72,9 @@ function myMove() {
       clearInterval(id);         
     }
     else {
-      pos+= rand.nextDouble(1.0);  
+      pos+= rand.nextInt(2);  
       elem.style.left = pos + 'px';  
-      pos2+= rand.nextDouble(0.9);;  
+      pos2+= rand.nextInt(2);;  
       elem2.style.left = pos2 + 'px'; 
     }
   }

@@ -12,7 +12,7 @@
   }
   
   button {
-    background: url(viking-helmet.png) no-repeat;
+    background: url("viking-helmet.png") no-repeat;
     cursor:pointer;
     border:none;
     width:90px;
@@ -21,7 +21,7 @@
 
   #myContainer {
   width: 1200px;
-  height: 900px;
+  height: 600px;
   position: relative; 
   background-image: url("dragon-background.jpg");
   background-repeat: no-repeat;
@@ -72,11 +72,11 @@ function myMove() {
   var pos2 = 0;
   var id = setInterval(frame, 10);
   function frame() {
-    if (pos == 900) {
+    if (pos == 1000) {
       alert("Hiccup and Toothless WIN!");
       clearInterval(id);
     } 
-    else if (pos2 == 900) {
+    else if (pos2 == 1000) {
       alert("Astrid and Stormfly WIN!");
       clearInterval(id);         
     }

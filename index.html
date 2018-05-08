@@ -26,12 +26,13 @@
   position: absolute;
   background: url("hiccup.png");
   background-repeat: no-repeat;
+  margin-top: 50px;
 }
  
 </style>
   
 <body>
-  <h1>THE GREAT RACE</h1>
+  <h1>THE GREAT RACE!!</h1>
   <h2>Hiccup and Toothless versus Astrid and Stormfly</h2>
   <h3>Click on the GO button to start the race!</h3>
 </body>
@@ -50,7 +51,7 @@ function myMove() {
   var pos = 0;
   var id = setInterval(frame, 10);
   function frame() {
-    if (pos == 875) {
+    if (pos == 800) {
       alert("Hiccup and Toothless WIN!");
       clearInterval(id);
     } else {

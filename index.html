@@ -24,7 +24,7 @@
 }
 
   #myContainer {
-  width: 1400px;
+  width: 1450px;
   height: 800px;
   position: relative; 
   background-image: url("backdrop.jpg");
@@ -81,11 +81,11 @@ function myMove() {
   var pos2 = 0;
   var id = setInterval(frame, 10);
   function frame() {
-    if (pos > 1200) {
+    if (pos > 1100) {
       clearInterval(id);
       if(!alert("Hiccup and Toothless are the winners! Click ok to race again.")){window.location.reload();}
     } 
-    else if (pos2 > 1200) {
+    else if (pos2 > 1100) {
       clearInterval(id);  
       if(!alert("Astrid and Stormfly are the winners! Click ok to race again.")){window.location.reload();}
     }

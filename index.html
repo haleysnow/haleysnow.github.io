@@ -50,16 +50,6 @@
   background-repeat: no-repeat;
   margin-top: 250px;
 }  
-
-#popup {
-  display:none;
-  position:absolute;
-  margin: auto;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 9999;
-    }
  
 image {
   background-repeat: no-repeat;
@@ -76,7 +66,6 @@ image {
   <button onclick="myMove()" ><br/><br/><br/><br/><br/><br/> Start Race</button> 
   <div id ="myAnimation"></div>  
   <div id ="myAnimationAgain"></div> 
-  <div id ="popup"><img url="hiccup-winner.png" alt="popup"><button id="close>Close</button></div>
 </div>
 </body> 
   
@@ -94,7 +83,6 @@ function myMove() {
   function frame() {
     if (pos > 1200) {
       clearInterval(id);
-      var elem = document.getElementById("popup");
       if(!alert("Hiccup and Toothless are the winners! Click ok to race again.")){window.location.reload();}
     } 
     else if (pos2 > 1200) {

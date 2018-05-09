@@ -76,9 +76,8 @@ function myMove() {
   var id = setInterval(frame, 10);
   function frame() {
     if (pos > 1200) {
-      alert("Hiccup and Toothless WIN!");
-      background: url("hiccup-winner.png");
       clearInterval(id);
+      return background-image: url("hiccup-winner.png") + "WINNER";
     } 
     else if (pos2 > 1200) {
       alert("Astrid and Stormfly WIN!");

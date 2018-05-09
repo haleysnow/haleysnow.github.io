@@ -64,8 +64,8 @@ image {
   <h2>Hiccup and Toothless versus Astrid and Stormfly</h2>
   <h3>Click on the VIKING helmet to start the race!</h3>
   <button onclick="myMove()" ><br/><br/><br/><br/><br/><br/> Start Race</button> 
-  <div id ="myAnimation"></div>  
-  <div id ="myAnimationAgain"></div> 
+  <div id ="myAnimation">Hiccup and Toothless</div>  
+  <div id ="myAnimationAgain">Astrid and Stormfly</div> 
 </div>
 </body> 
   
@@ -83,7 +83,7 @@ function myMove() {
   function frame() {
     if (pos > 1200) {
       clearInterval(id);
-      if(!alert("Hiccup and Toothless are the winners! Click ok to race again." + url="hiccup-winner.png")){window.location.reload();}
+      if(!alert("Hiccup and Toothless are the winners! Click ok to race again.")){window.location.reload();}
     } 
     else if (pos2 > 1200) {
       clearInterval(id);  

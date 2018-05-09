@@ -77,10 +77,12 @@ function myMove() {
   function frame() {
     if (pos > 1200) {
       alert("Hiccup and Toothless WIN!");
+      background: url("hiccup-winner.png");
       clearInterval(id);
     } 
     else if (pos2 > 1200) {
       alert("Astrid and Stormfly WIN!");
+      background: url("astrid-winner.png");
       clearInterval(id);         
     }
     else {

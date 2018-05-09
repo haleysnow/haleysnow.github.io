@@ -51,6 +51,11 @@
   margin-top: 350px;
 }  
  
+image {
+  background-repeat: no-repeat;
+  margin: auto;
+  }
+  
 </style>
 
 <body>      
@@ -89,6 +94,12 @@ function myMove() {
       pos2 = pos2 + getRandomInt(1, 10);
       elem2.style.left = pos2 + 'px';
       console.log("pos: " + pos + "<br>" + "pos2: ");
+    }
+    if (pos2 == true) {
+      insert img: url("astrid-winner.png");
+    }
+    else {
+      insert img: url("hiccup-winner.png")'
     }
   }
 }                                     
